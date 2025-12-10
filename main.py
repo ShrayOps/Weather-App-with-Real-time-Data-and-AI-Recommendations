@@ -22,8 +22,8 @@ class WeatherApp:
         ctk.set_default_color_theme("blue")
         
         # Initialize API authentication credentials
-        self.weather_api_key = "fcdabe409812d362e8fa8dae901418f5"
-        self.aqi_api_key = "fcdabe409812d362e8fa8dae901418f5"
+        self.weather_api_key = "<API KEY GOES HERE>"
+        self.aqi_api_key = "<API KEY GOES HERE>"
         
         # Initialize Gemini API configuration
         genai.configure(api_key=os.environ['GOOGLE_API_KEY'])
@@ -432,6 +432,6 @@ class WeatherApp:
         self.ai_recommendation_label.configure(text=formatted_recommendation)
 
 if __name__ == "__main__":
-    os.environ['GOOGLE_API_KEY'] = 'AIzaSyDLb2iJxCo5oZG21FqDzlrut0YLkFxCuLs'
+    os.environ['GOOGLE_API_KEY'] = '<API KEY GOES HERE>'
     app = WeatherApp()
     app.root.mainloop()
